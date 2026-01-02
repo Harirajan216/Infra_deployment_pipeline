@@ -5,7 +5,8 @@ resource "aws_instance" "myec2" {
   count         = var.ec2_count
 
   tags = {
+
     Name = "${var.env}-ec2-${count.index}"
-    Env  = var.env
+    env  = var.env
   }
 }
