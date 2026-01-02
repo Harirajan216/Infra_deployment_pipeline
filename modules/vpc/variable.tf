@@ -1,22 +1,19 @@
-variable "Env" {
-    type = string
-    description = "env of ec2"
-  
+variable "env" {
+  type        = string
+  description = "What Env we are creating (dev, qa, production)"
 }
+
 variable "vpc_cidr" {
-    type = string
-    description = "vpc CIDR range"
-  
+  type        = string
+  description = "VPC CIDR"
 }
 
 variable "subnet_cidr" {
-    type = string
-    description = "subnet CIDR range"
-  
+  type        = string
+  description = "SUBNET CIDR"
 }
 
-variable "az_zone" {
-    type = string
-    description = "az for vpc"
-  
+variable "subnet_az" {
+  type        = string
+  description = "AZ of the Subnet"
 }

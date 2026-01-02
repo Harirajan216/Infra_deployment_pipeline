@@ -22,7 +22,7 @@ variable "ec2_count" {
   
 }
 
-variable "Env" {
+variable "env" {
     type = string
     description = "env of ec2 instances"
   

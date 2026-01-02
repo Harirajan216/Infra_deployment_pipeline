@@ -13,6 +13,6 @@ module "ec2" {
   instance_type     = "t3.micro"
   subnet_id         = module.vpc.subnet_id
   ec2_count         = 3
-  Env               = "QA"
+  env               = "QA"
 }
 
