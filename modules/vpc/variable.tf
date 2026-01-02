@@ -20,3 +20,9 @@ variable "az_zone" {
     description = "az for vpc"
   
 }
+
+output "subnet_id" {
+    value = aws_subnet.main.subnetid
+    description = "the subnet which my instances to be created"
+  
+}
