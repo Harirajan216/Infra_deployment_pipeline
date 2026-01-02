@@ -1,10 +1,11 @@
 terraform {
   required_providers {
     aws = {
-      source = "hashicorp/aws"
+      source  = "hashicorp/aws"
       version = "6.27.0"
     }
   }
+
   backend "s3" {
     bucket         = "terraformbucket2026"
     key            = "env/Dev/terraform.tfstate"
