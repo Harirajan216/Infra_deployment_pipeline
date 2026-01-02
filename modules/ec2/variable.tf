@@ -1,29 +1,24 @@
 variable "ami_id" {
-    type = string
-    description = "AMI of ec2 instances"
-  
+  type        = string
+  description = "Ami id of my EC2"
 }
 
 variable "instance_type" {
-    type = string
-    description = "Instance type of ec2 instance"
-  
+  type        = string
+  description = "Instance Type of my EC2"
 }
 
 variable "subnet_id" {
-    type = string
-    description = "subnet id of ec2 instances"
-  
+  type        = string
+  description = "Subnet ID of my EC2"
 }
 
 variable "ec2_count" {
-    type = string
-    description = "ec2 count of ec2 instances"
-  
+  type        = string
+  description = "No of my EC2 to be created"
 }
 
-variable "Env" {
-    type = string
-    description = "env of ec2 instances"
-  
+variable "env" {
+  type        = string
+  description = "What Env we are creating (dev, qa, production)"
 }
