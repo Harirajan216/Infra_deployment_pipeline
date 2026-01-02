@@ -34,7 +34,7 @@ pipeline {
     stage('Approval') {
       
       when {
-        expression { env.BRANCH_NAME == 'production' }
+        expression { env.BRANCH_NAME == 'QA' }
       }
       
       steps {
