@@ -18,6 +18,3 @@ variable "subnet_az" {
   description = "AZ of the Subnet"
 }
 
-output "subnet_id" {
-  value = aws_subnet.public.id   # or whatever your real subnet resource + attribute is
-}
