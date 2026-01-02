@@ -19,7 +19,5 @@ variable "subnet_az" {
 }
 
 output "subnet_id" {
-    value = aws_subnet.main.subnetid
-    description = "the subnet which my instances to be created"
-  
+  value = aws_subnet.public.id   # or whatever your real subnet resource + attribute is
 }
